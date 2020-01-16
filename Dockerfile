@@ -1,4 +1,4 @@
-#IMPORT https://archive.openwrt.org/chaos_calmer/15.05.1/x86/generic/openwrt-15.05.1-x86-generic-Generic-rootfs.tar.gz
+#IMPORT https://downloads.openwrt.org/releases/18.06.0-rc1/targets/x86/64/openwrt-18.06.0-rc1-x86-64-generic-rootfs.tar.gz
 FROM scratch
-ADD imports/openwrt-15.05.1-x86-generic-Generic-rootfs.tar.gz /
+ADD imports/openwrt-18.06.0-rc1-x86-64-generic-rootfs.tar.gz /
 CMD /bin/sh
