@@ -1,0 +1,6 @@
+#!/bin/sh -eu
+
+while read -r cmd path; do
+  [ "$cmd" = "#IMPORT" ] || continue
+  curl -vsSfL "$path" -o "imports/${path##*/}"
+done < "$DOCKERFILE_PATH"

@@ -1,3 +1,3 @@
 # openwrt-docker
 
-Docker images for OpenWrt & LEDE
+Docker images for OpenWrt
