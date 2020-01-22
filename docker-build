@@ -1,9 +1,0 @@
-#!/bin/sh -eu
-
-# For build locally
-
-[ $# -eq 0 ] && set -- Dockerfile
-cd "$(dirname "$1")"
-DOCKERFILE_PATH=$1 hooks/pre_build
-shift
-docker build . "$@"
