@@ -1,4 +1,10 @@
-#IMPORT https://downloads.openwrt.org/releases/19.07.0/targets/x86/64/openwrt-19.07.0-x86-64-generic-rootfs.tar.gz
+FROM alpine as builder
+ENV base=https://archive.openwrt.org/backfire/10.03/x86/
+ENV file=openwrt-x86-rootfs.tgz
+ENV md5=7ca95c1f390b18af966b457007b32b60
+RUN wget -q "$base$file" && echo "$md5  $file" | md5sum -c
+RUN mkdir /rootfs && tar xf "$file" -C /rootfs
+
 FROM scratch
-ADD imports/openwrt-19.07.0-x86-64-generic-rootfs.tar.gz /
-CMD /bin/sh
+COPY --from=builder /rootfs/ /
+CMD ["/bin/sh"]
