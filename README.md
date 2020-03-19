@@ -1,14 +1,14 @@
 # Docker images for OpenWrt & LEDE
 
-Those Docker images are for only testing [shellspec](https://github.com/shellspec/shellspec) purposes.
+Those Docker images are for only testing [ShellSpec](https://github.com/shellspec/shellspec) purposes.
 
-**OpenWrt**
+## OpenWrt
 
 ![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/shellspec/openwrt)
 ![Docker Cloud Automated build](https://img.shields.io/docker/cloud/automated/shellspec/openwrt)
 ![Docker Pulls](https://img.shields.io/docker/pulls/shellspec/openwrt)
 
-**LEDE**
+## LEDE
 
 ![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/shellspec/lede)
 ![Docker Cloud Automated build](https://img.shields.io/docker/cloud/automated/shellspec/lede)
