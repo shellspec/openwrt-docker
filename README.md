@@ -1,6 +1,6 @@
 # Docker images for OpenWrt & LEDE
 
-Those Docker images are for only testing [ShellSpec](https://github.com/shellspec/shellspec) purposes.
+Those Docker images are for only testing [ShellSpec](https://shellspec.info/) purposes.
 
 ## OpenWrt
 
